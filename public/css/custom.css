@@ -1,0 +1,47 @@
+.parent {
+    display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    flex-grow: 1;        /* Take up all remaining space */
+
+    grid-row-gap: 5px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex; 
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgoOZp73F6kT8JNzPXtct0j_4c62AstH1tpvqVgdAf8Xx674Ep0qNZYcd_vhBDoMYiTakN-lJbsFHPbr3AoyjtIA'); /* Replace 'your-image-url.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+    }
+    
+    .div1:hover {
+        background-color: rgba(0,0,0,0.3); /* Dark overlay on hover */
+        transform: scale(1.05); /* Slight zoom effect */
+    }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 3 / 1 / 4 / 2; }
+    .div4 { grid-area: 1 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 2 / 4 / 3; }
+    .div6 { grid-area: 1 / 3 / 2 / 4; }
+    .div7 { grid-area: 2 / 3 / 4 / 4; }
+
+
+
+.box {
+    background-color: lightgrey;
+  
+}
+
+.container{
+    height: 100vh;
+    display: flex;       /* Use flexbox to lay out children */
+    flex-direction: column; 
+  }
+
